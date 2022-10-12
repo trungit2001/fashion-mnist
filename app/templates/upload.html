@@ -16,7 +16,7 @@
 <body>
     <h1 class="title">Choose an image to predict</h1>
     <img class="bg" src="../static/images/bg.png" alt="background">
-    <form action="http://localhost:5000/upload" method=post enctype=multipart/form-data>
+    <form action="{{ upload_url }}" method=post enctype=multipart/form-data>
         <input class="btn" type=file accept="image/*" name=file><br />
         <input class="btn" type=submit value=Upload>
     </form>

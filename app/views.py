@@ -5,6 +5,7 @@ from app.utils import (
     allowed_file,
     load_and_transform_image
 )
+from app.settings import BASE_URL
 from werkzeug.utils import secure_filename
 from flask import (
     request,
@@ -29,7 +30,8 @@ def invalid_route(e):
 @app.route("/upload", methods=["GET", "POST"])
 def upload_file():
     if request.method == "GET":
-        return render_template("upload.html")
+        upload_url = BASE_URL + "upload"
+        return render_template("upload.html", upload_url=upload_url)
 
     if request.method == "POST":
         if "file" not in request.files:

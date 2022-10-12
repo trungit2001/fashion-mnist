@@ -34,13 +34,6 @@ img.bg {
     margin: 0 auto;
 }
 
-img.center {
-    width: 336px;
-    height: 336px;
-    display: block;
-    margin: 0 auto;
-}
-
 input[type=file]::file-selector-button {
     border: none;
     background: #cfcfcffa;
