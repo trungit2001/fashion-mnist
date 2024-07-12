@@ -6,4 +6,4 @@ ALLOWED_EXTENSIONS = {"png", "jpg", "jpeg"}
 IMAGE_SIZE = (28, 28, 1)
 MODEL_WEIGHTS_PATH = "./app/models/weights"
 
-BASE_URL = "https://fashion-mnist.up.railway.app/"
+BASE_URL = "localhost:5000/"
